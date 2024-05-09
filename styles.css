@@ -1,0 +1,39 @@
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/285/172/9/sunset-8k-forest-4k-wallpaper-preview.jpg");
+    background-size: cover;
+    background: no;
+}
+.container{
+    background-color: azure;
+    border-radius: 0.5rem;
+    box-shadow: 0cm;
+    width: 45rem;
+}
+.resultArea{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 7rem
+}
+
+.userResult img{
+    
+    transform: rotate(90deg);
+}
+.cpuResult img{
+    transform: rotate(-90deg);
+}
+
+.optionArea span img{
+    width: 10rem;
+    height: 15rem;
+}
+
+.optionArea{
+    display: flex;
+    justify-content: center;
+}
