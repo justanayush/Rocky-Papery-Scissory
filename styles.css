@@ -19,7 +19,49 @@ body{
     justify-content: center;
     column-gap: 7rem
 }
+.btn-div{
+    display: flex;
+    justify-content: center;
+    
+}
 
+.btn{
+    pointer-events: none;
+}
+.none{
+    pointer-events: none;
+}
+.options{
+    cursor: pointer;
+    opacity: 0.5;
+    text-align: center;
+}
+
+.name{
+    margin-right: 1.3rem;
+}
+.options:hover{
+    transition: 0.3s ease-in-out;
+    opacity: 1;
+}
+.btn:hover{
+    cursor:pointer;
+}
+.shake{
+    animation: shake 0.5s infinite;
+}
+@keyframes shake {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-10px); }
+    50% { transform: translateY(10px); }
+    75% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+.btn{
+    width: 10rem;
+    height: 4rem;
+    border-radius: 0.5rem;
+}
 .userResult img{
     
     transform: rotate(90deg);
@@ -36,4 +78,5 @@ body{
 .optionArea{
     display: flex;
     justify-content: center;
+    column-gap: 4rem;
 }
