@@ -10,8 +10,9 @@ body{
 .container{
     background-color: azure;
     border-radius: 0.5rem;
-    box-shadow: 0cm;
-    width: 45rem;
+    box-shadow: 3cm;
+    width: 700px;
+    overflow: hidden;
 }
 .resultArea{
     display: flex;
@@ -22,7 +23,7 @@ body{
 .btn-div{
     display: flex;
     justify-content: center;
-    
+    margin-bottom: 2rem
 }
 .vsbl{
     opacity: 1;
@@ -43,36 +44,38 @@ body{
 }
 .rock{
     cursor: pointer;
-    opacity: 0.5;
     text-align: center;
 }
 
 .paper{
     cursor: pointer;
-    opacity: 0.5;
     text-align: center;
 }
 .scissor{
     cursor: pointer;
-    opacity: 0.5;
     text-align: center;
 }
 .name{
     margin-right: 1.3rem;
 }
+
+
+
 .options{
-    opacity: 0.5;
     pointer-events: all;
-}
-.options:hover{
-    transition: 0.3s ease-in-out;
     opacity: 1;
 }
+
+
+
 .btn:hover{
     cursor:pointer;
 }
+
 .shake{
-    animation: shake 0.5s infinite;
+    
+    animation: shake 0.5s ease-in-out infinite;
+
 }
 @keyframes shake {
     0% { transform: translateY(0); }
@@ -85,22 +88,52 @@ body{
     width: 10rem;
     height: 4rem;
     border-radius: 0.5rem;
-}
-.userResult img{
     
+}
+
+.userResult img{
+    max-width: 100%;
+    transform: scaleY(-1);
     transform: rotate(90deg);
 }
 .cpuResult img{
+    max-width: 100%;
     transform: rotate(-90deg);
 }
 
+.flip{
+    transform: scaleY(-1);
+}
 .optionArea span img{
+    max-width: 100%;
     width: 10rem;
     height: 15rem;
+    margin-bottom: 2rem
 }
+
 
 .optionArea{
     display: flex;
     justify-content: center;
     column-gap: 4rem;
+}
+
+@media only screen and (max-width:425px) {
+    .container{
+        width: 320px;
+        padding: 50px;
+    }
+    .optionArea span img{
+        width: 80px;
+        height: 80px;
+    }
+
+    .resultArea span img{
+        width: 125px;
+        height: 100px;
+    }
+    .btn, .win-loss{
+        width: 100px;
+        height: 80px;
+    }
 }
