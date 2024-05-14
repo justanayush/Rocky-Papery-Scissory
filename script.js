@@ -30,6 +30,7 @@ function resetGame() {
     cpuImg.setAttribute('src', 'images/rock.png');
     button.innerText = "Select an Option";
     button.style.display = 'block';
+    button.style.pointerEvents = 'none';
     rock.style.pointerEvents = 'all';
     paper.style.pointerEvents = 'all';
     scissor.style.pointerEvents = 'all';
